@@ -1,11 +1,13 @@
+type Figures = 'triangle' | 'circle' | 'rectangle';
+
 export interface Figure {
-  shape: string;
+  shape: Figures;
   color: 'red' | 'green' | 'blue';
   getArea(): number;
 }
 
 export class Triangle implements Figure {
-  shape = 'triangle';
+  shape: Figures = 'triangle';
 
   color: 'red' | 'green' | 'blue';
 
@@ -46,7 +48,7 @@ export class Triangle implements Figure {
 }
 
 export class Circle implements Figure {
-  shape = 'circle';
+  shape: Figures = 'circle';
 
   color: 'red' | 'green' | 'blue';
 
@@ -69,7 +71,7 @@ export class Circle implements Figure {
 }
 
 export class Rectangle implements Figure {
-  shape = 'rectangle';
+  shape: Figures = 'rectangle';
 
   color: 'red' | 'green' | 'blue';
 
